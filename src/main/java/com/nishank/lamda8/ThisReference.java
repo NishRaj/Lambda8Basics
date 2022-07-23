@@ -9,11 +9,12 @@ public class ThisReference {
         ThisReference thisReference = new ThisReference();
         int x = 20;
         thisReference.process(10, (i) -> {
-            System.out.println(i + x);
+
+
             /*
             Lambda expression does not change "this"
              */
-            //System.out.println(this);
+           //System.out.println(this);
         });
         thisReference.execute();
     }

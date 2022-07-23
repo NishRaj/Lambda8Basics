@@ -35,6 +35,9 @@ public class Person {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+    public int getLengthOfPerson(){
+        return (this.getFirstName() + this.getLastName()).length();
+    }
 
     @Override
     public String toString() {
